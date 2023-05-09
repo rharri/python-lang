@@ -33,8 +33,8 @@ class Philip(Adam, Eve): pass               # noqa
 class Elizabeth2(Adam, Eve): pass           # noqa
 class Charles3(Philip, Elizabeth2): pass    # noqa
 class John(Adam, Eve): pass                 # noqa
-class Fraces(Adam, Eve): pass               # noqa
-class Diane(John, Fraces): pass             # noqa
+class Frances(Adam, Eve): pass               # noqa
+class Diane(John, Frances): pass             # noqa
 class William(Charles3, Diane): pass        # noqa
 
 
