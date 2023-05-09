@@ -19,21 +19,19 @@ def test_restaurant(capsys):
 m = MockedRestaurant()
 
 
-# Testing a class with single inheritance, multiple inheritance
+# Testing a class with single inheritance, multiple inheritance     Side Effects
 # whose dependency (the is-a) needs to be mocked:
-#   - super() mro                                                   *                                                   
-#   - Python monkey patching                                        x
-#   - pytest monkeypatching                                         x
-#   - mocking                                                       *
+#   - super() mro                                                       *                                                   
+#   - pytest monkeypatching                                             *?
+#   - pytest-mock                                                       *
 
 # Testing a class with a has-a dependency:
-#   - Duck typing                                                   *
-#   - Python monkey patching                                        x
-#   - pytest monkeypatching                                         x
-#   - Protocols: structural subtyping                               *
-#   - Subclass the dependency? (grab the entire inheritance tree)   *
-#   - mocking                                                       *
+#   - Duck typing                                                       *
+#   - pytest monkeypatching                                             *?
+#   - Protocols: structural subtyping                                   *
+#   - Subclass the dependency? (grab the entire inheritance tree)       *
+#   - pytest-mock                                                       *
 
-# Testing sideffects:
+# Testing side effects:
 #   - pytest --fixtures (e.g. capsys)
-#   - pytest mock
+#   - pytest-mock
